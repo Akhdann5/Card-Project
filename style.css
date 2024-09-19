@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+    --main-color: #b9b9b9;
+    --text-color: #000000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 95px 80px 95px 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+}
+
+.content-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; 
+    transition: 1s;
+}
+
+.content-img img:hover {
+    transform: scale(220%) translateY(-35%);
+    cursor: pointer;
+}
+
+.row h2 {
+    margin-top: 15px;
+    font-size: 34px;
+}
+
+.row h3 {
+    margin: 5px;
+}
+
+.row p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+    width: 500px;
+    font-weight: 400;
+}
+
+.media-social {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.media-social i {
+    margin: 15px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    color: #000000;
+}
+
+.media-social i:hover {
+    transform: scale(120%);
+    cursor: pointer;
+    color: #4692cb;
+    border: #4692cb 2px solid;
+}
+
+.btn {
+    margin-top: 60px; 
+}
+
+.btn a {
+    background: #e6e6e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 25px;
+    transition: 0.5s;
+}
+
+.btn a:hover {
+    background-color: #4692cb; 
+    color: #fff;
+    cursor: pointer;
+}
+
+.lcs .lcs-content {
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 40px;
+    cursor: pointer;
+    margin-top: 80px;
+}
+
+.lcs-content i {
+    transition: color 0.3s;
+}
+
+.lcs-content.active i {
+    color: #f00; 
+}
+
+.lcs-content p {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.lcs-content.active p {
+    font-weight: bold;
+    color: #f00; 
+}
